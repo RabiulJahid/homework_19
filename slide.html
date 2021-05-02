@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Carousel</title>
+  </head>
+  
+  <body>
+    <!--heading start-->
+    <section class="caroUsel">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-white">
+            <h2><marquee>"Carousel"</marquee></h2>
+          </div>
+        </div>
+      </div>    
+    </section>
+    <!--slide only-->
+    <h1 class="h_1">Slides only</h1>
+
+    <section class="sliDe">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+
+           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner text-center">
+                 <div class="carousel-item active">
+                    <img src="img/s1.jpg" class="d-block imG" alt="image">
+                       </div>
+                           <div class="carousel-item">
+                         <img src="img/s2.jpg" class="d-block imG" alt="image">
+                      </div>
+                      <div class="carousel-item">
+                         <img src="img/s3.jpg" class="d-block imG" alt="image">
+                      </div>
+                      <div class="carousel-item">
+                         <img src="img/s4.jpg" class="d-block imG" alt="image">
+                      </div>
+                    </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--with controls-->
+            <h1 class="h_1">With controls</h1>
+
+   <section class="W_controls">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            
+            <div id="c_Controls" class="carousel slide" data-bs-ride="carousel">
+              <!--inner start-->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/s4.jpg" class="d-block imG" alt="image">
+    </div>
+    <div class="carousel-item">
+      <img src="img/s4.jpg" class="d-block imG" alt="image">
+      
+    </div>
+    <div class="carousel-item">
+      <img src="img/s2.jpg" class="d-block imG" alt="image">
+    </div>
+    <div class="carousel-item">
+      <img src="img/s3.jpg" class="d-block imG" alt="image">
+    </div>
+  </div>
+  <!--inner end-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#c_Controls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#c_Controls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+      </div>
+          </div>
+        </div>
+       </div>
+     </section>
+
+     <!--With indicators-->
+
+    <h1 class="h_1">With indicators one</h1>
+
+    <section class="W_controls">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                 <!--inner start-->
+                    <div class="carousel-inner">
+                <div class="carousel-item">
+              <img src="img/s3.jpg" class="d-block imG" alt="image">
+          <div class="carousel-caption d-none d-md-block">
+       <h5>Lorem, ipsum, dolor.</h5>
+  <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Voluptatibus, iure.</p>
+</div>
+    </div>
+       <div class="carousel-item">
+         <img src="img/s1.jpg" class="d-block imG" alt="image">
+           <div class="carousel-caption d-none d-md-block">
+             <h5>Lorem, ipsum, dolor.</h5>
+                <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Voluptatibus, iure.</p>
+                 </div>
+                      </div>
+                          <div class="carousel-item">
+                              <img src="img/s4.jpg" class="d-block imG" alt="image">
+                          <div class="carousel-caption d-none d-md-block">
+                      <h5>Lorem, ipsum, dolor.</h5>
+                   <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Voluptatibus, iure.</p>
+                </div>
+           </div>
+        <div class="carousel-item  active">
+    <img src="img/s2.jpg" class="d-block imG" alt="image">
+ <div class="carousel-caption d-none d-md-block">
+     <h5>Lorem, ipsum, dolor.</h5>
+        <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Voluptatibus, iure.</p>
+          </div>
+             </div>
+                 </div>
+            <!--inner end-->
+                         <!--button start-->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                     </button>
+
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                    </button>
+                        <!--button end-->
+                  </div>
+               </div>
+        </div>
+     </div>
+ </section>
+
+     <!--indicator two start-->
+     <h1 class="h_1">With indicators two</h1>
+    
+
+ 
+
+    <!-- JS Links-->  
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  
+  </body>
+</html>
+

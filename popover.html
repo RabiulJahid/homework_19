@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Popover</title>
+  </head>
+  <body>
+    <!--heading start-->
+    <section class="pop_head mt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-white text-center">
+            <h2><marquee>"Normal and Four Directions Popover"</marquee></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--heading end-->
+
+    <!--popover start-->
+ <section class="pop_over">
+     <div class="container">
+      <div class="row">
+          <!--left popover-->
+        <div class="col-md-3 mt-5 left_P text-center">
+           <button type="button" class="btn btn-lg btn-danger mt-5 radius_1" data-bs-toggle="popover" title="Title" data-bs-content="Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quidem rem natus aperiam sint nobis?">Click to toggle popover</button>
+        </div>
+
+          <!--right popover start-->
+          <div class="col-md-8 mt-5 right_P text-center">
+            <button type="button" class="btn btn-secondary mt-5 radius" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" title="Top popover" data-bs-content="Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Dicta temporibus beatae, architecto ex mollitia libero.">
+            Top Popover
+           </button>
+
+           <button type="button" class="btn btn-warning mt-5 radius" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Right popover" data-bs-content="Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Dicta temporibus beatae, architecto ex mollitia libero.">
+          Right Popover
+           </button>
+
+           <button type="button" class="btn btn-danger mt-5 radius" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="Bottom popover" data-bs-content="Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Dicta temporibus beatae, architecto ex mollitia libero.">
+           Bottom Popover
+           </button>
+
+           <button type="button" class="btn btn-primary mt-5 radius" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Left popover" data-bs-content="Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Dicta temporibus beatae, architecto ex mollitia libero.">
+           Left Popover
+           </button>
+       </div>
+          <!--right popover end-->
+       </div>
+    </div>
+ </section>
+
+  <!--heading two start-->
+    <section class="popHead_2 mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2><marquee>"Dismissible and Disabled Popover"</marquee></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--heading two end-->
+
+    <!--pop two start-->
+    <section class="popHead_3 mt-4">
+      <div class="container">
+        <div class="row justify-content-between">
+          <!--left another start-->
+          <div class="col-md-6 text-center one_1 mt-5">
+            <a tabindex="0" class="btn btn-lg btn-danger mt-5 d_ble" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi repellat architecto doloribus quae, incidunt pariatur illo ea quam, dicta at debitis praesentium, blanditiis, porro!">Dismissible popover</a>
+          </div>
+
+          <!--right another start-->
+          <div class="col-md-6 text-center one_2 mt-5">
+            <span class="d-inline-block mt-5 tt_t" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
+                  <button class="btn btn-warning d_le" type="button" disabled>Disabled button</button>
+            </span>
+          </div>
+
+        </div>
+      </div>
+      
+    </section>
+    <!--popover two end-->
+
+
+
+
+    
+
+
+    
+
+ 
+
+    <!-- JS Links--> 
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+     })
+
+    var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+   container: 'body'
+    })
+
+    var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+  trigger: 'focus'
+})
+    </script>
+  
+  </body>
+</html>

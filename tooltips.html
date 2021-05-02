@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Toltips</title>
+  </head>
+  <body>
+    <!--start-->
+    <section class="main_T">
+    <!--tooltips heading start -->
+<section class="toolTips mt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-white">
+            <h2><marquee>"Tooltips"</marquee></h2>
+          </div>
+        </div>
+      </div>
+</section>
+    <!--tooltips heading end-->
+    <!--tooltips start-->
+    <section class="toolTips_1 mt-5">
+      <div class="container">
+        <div class="row">
+          <!--tooltips left-->
+        <div class="col-md-8 mt-5 text-center tt-L">
+            <button type="button" class="btn btn-primary left mar_gin" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+             Tooltip on top
+           </button>
+
+            <button type="button" class="btn btn-secondary left mar_gin" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right ">
+            Tooltip on right
+           </button>
+
+           <button type="button" class="btn btn-warning left mar_gin" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+           Tooltip on bottom
+           </button>
+
+           <button type="button" class="btn btn-danger left mar_gin" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+            Tooltip on left
+           </button>
+       </div>
+
+          <!--tooltips right-->
+          <div class="col-md-3 mt-5 text-center tt-R">
+            <button type="button" class="btn btn-info t_R mar_gin" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+            Tooltip with HTML
+            </button>
+           
+          </div>
+
+        </div>
+      </div>
+      
+    </section>
+  </section>
+    <!--tooltips end-->
+
+
+
+    
+
+ 
+
+    <!-- JS Links-->  
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+     return new bootstrap.Tooltip(tooltipTriggerEl)
+     })
+    </script>
+  
+  </body>
+</html>
